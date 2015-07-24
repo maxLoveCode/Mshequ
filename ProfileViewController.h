@@ -1,5 +1,5 @@
 //
-//  LoginViewController.h
+//  ProfileViewController.h
 //  Mshequ
 //
 //  Created by Cheng Ma on 24/07/2015.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-#import "ProfileViewController.h"
-
-@interface LoginViewController : UIViewController
+@interface ProfileViewController : UIViewController
 
 @end

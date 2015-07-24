@@ -21,17 +21,17 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     UIButton *recruit = [UIButton buttonWithType:UIButtonTypeCustom];
-    recruit.frame = CGRectMake(100, 100, 60, 60);
+    recruit.frame = CGRectMake(SCREEN_WIDTH/2-30, SCREEN_HEIGHT/3, 60, 60);
     recruit.backgroundColor = [UIColor blueColor];
     [recruit setTitle:@"发活" forState:UIControlStateNormal];
     
     UIButton *seek = [UIButton buttonWithType:UIButtonTypeCustom];
-    seek.frame = CGRectMake(30, 90, 60, 60);
+    seek.frame = CGRectMake(SCREEN_WIDTH/2-30, SCREEN_HEIGHT/3+70, 60, 60);
     seek.backgroundColor = [UIColor blueColor];
     [seek setTitle:@"找活" forState: UIControlStateNormal];
     
     UIButton *profile = [UIButton buttonWithType:UIButtonTypeCustom];
-    profile.frame = CGRectMake(170, 90, 60, 60);
+    profile.frame = CGRectMake(SCREEN_WIDTH/5*4, 20, 60, 60);
     profile.backgroundColor = [UIColor blueColor];
     [profile setTitle:@"个人" forState: UIControlStateNormal];
     
@@ -61,6 +61,8 @@
 
 - (void)toProfile{
     NSLog(@"个人信息");
+    ProfileViewController *profileViewController = [[ProfileViewController alloc]init];
+    [[[UIApplication sharedApplication] delegate] window].rootViewController = profileViewController;
 }
 
 
